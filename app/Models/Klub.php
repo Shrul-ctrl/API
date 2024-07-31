@@ -21,8 +21,8 @@ class Klub extends Model
         return $this->hasMany(Pemain::class, 'id_klub');
     }
 
-    public function fan()
+    public function fans()
     {
-        return $this->belongsToMany(fans::class, 'fan_klub','id_klub','id_fan');
+        return $this->belongsToMany(fan::class, 'fan_klub','id_klub','id_fan');
     }
 }

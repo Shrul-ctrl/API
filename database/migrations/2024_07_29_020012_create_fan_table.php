@@ -17,7 +17,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        Schema::create('fan_club', function (Blueprint $table) {
+        Schema::create('fan_klub', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_fan');
             $table->unsignedBigInteger('id_klub');
