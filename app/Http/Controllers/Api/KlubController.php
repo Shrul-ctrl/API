@@ -92,7 +92,7 @@ class KlubController extends Controller
     {
         $validate = Validator::make($request->all(), [  
             'nama_klub' => 'required',
-            'logo' => 'required|image|max:2048',
+            'logo' => 'nullable|image|max:2048',
             'id_liga' => 'required'
         ]);
 
